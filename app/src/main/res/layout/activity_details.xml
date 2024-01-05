@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/detailsImage_1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bgd_tiny"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/backDtl"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/previous"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bgd_tiny"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/bagDtl"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/shoppingbag"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/itemQuantityD1"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_gs"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailsImage_1">
+
+                <TextView
+                    android:id="@+id/qunt_dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="32dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/quantity_DTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/qunt_inc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="32dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/productDtlTitle_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/itemQuantityD1"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/productDtlPrice_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="109.95"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productDtlTitle_1" />
+            <TextView
+                android:id="@+id/CategoryTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category : "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/productDtlPrice_1"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"/>
+            <TextView
+                android:id="@+id/productDtlCategory_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="men's clothing"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/CategoryTV2"
+                app:layout_constraintTop_toTopOf="@+id/CategoryTV2"
+                app:layout_constraintBottom_toBottomOf="@+id/CategoryTV2"/>
+            <TextView
+                android:id="@+id/RatingTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating : "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/CategoryTV2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"/>
+            <TextView
+                android:id="@+id/productDtlRating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.9"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/RatingTV2"
+                app:layout_constraintTop_toTopOf="@+id/RatingTV2"
+                app:layout_constraintBottom_toBottomOf="@+id/RatingTV2"/>
+            <TextView
+                android:id="@+id/CountTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count : "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/RatingTV2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"/>
+            <TextView
+                android:id="@+id/productDtlCount_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="120"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toEndOf="@+id/CountTV2"
+                app:layout_constraintTop_toTopOf="@+id/CountTV2"
+                app:layout_constraintBottom_toBottomOf="@+id/CountTV2"/>
+            <TextView
+                android:id="@+id/DescriptionTV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/CountTV2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"/>
+            <TextView
+                android:id="@+id/productDtlDescription_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout_2"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"
+                app:layout_constraintTop_toBottomOf="@+id/DescriptionTV2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/itemAddToBag"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_gs"
+                android:text="Add to cart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintTop_toBottomOf="@id/productDtlDescription_1"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout_2"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout_2"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout_2"/>
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
