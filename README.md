@@ -3,10 +3,10 @@ WTMachineTest Project
 This is an Android aplication that fetches data from a remote server using Retrofit, store the data in a local Room database, and display it in a RecyclerView.
 
 Requiremants :-
-Android Studio version - Hedgehog | 2023.1.1
-Retrofit library version - retrofit:2.9.0
-Room library version - 2.6.1
-Glide library version - glide:5.0.0-rc01
+* Android Studio version - Hedgehog | 2023.1.1
+* Retrofit library version - retrofit:2.9.0
+* Room library version - 2.6.1
+* Glide library version - glide:5.0.0-rc01
 
 Usage :-
 The app will fetch data from the API and display it in a RecyclerView on the main screen.
